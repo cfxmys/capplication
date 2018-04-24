@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:gravity="center"
+              android:background="@android:color/holo_blue_light"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/standard_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:id="@+id/singletask"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="single task"/>
+
+    <Button
+        android:id="@+id/singletop"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="single top"/>
+
+    <Button
+        android:id="@+id/single_instance"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="single instance"/>
+
+
+</LinearLayout>
