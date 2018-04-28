@@ -1,1 +1,1 @@
-include ':capplication'
+include ':activity_launch_mode', ':myapplication', ':fragment_lifecycle', ':baselibrary'
