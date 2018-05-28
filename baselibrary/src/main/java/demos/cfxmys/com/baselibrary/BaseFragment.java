@@ -3,6 +3,7 @@ package demos.cfxmys.com.baselibrary;
 import android.app.Fragment;
 import android.content.Context;
 import android.os.Bundle;
+import android.support.annotation.LayoutRes;
 import android.support.annotation.Nullable;
 import android.util.Log;
 import android.view.LayoutInflater;
@@ -38,8 +39,11 @@ public abstract class BaseFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, Bundle savedInstanceState) {
         Log.d(TAG, "onCreateView");
-        View rootView = createFragmentView(inflater, container, savedInstanceState);
+        int layoutRes = getFragmentLayoutRes();
+        // TODO 判断layoutRes 是否有效
+        View rootView = inflater.inflate(layoutRes, container, false);
         mUnbinder = ButterKnife.bind(this, rootView);
+        createFragmentView(rootView);
         return rootView;
     }
 
@@ -88,6 +92,8 @@ public abstract class BaseFragment extends Fragment {
         Log.d(TAG, "onDetach");
     }
 
-    protected abstract View createFragmentView(LayoutInflater inflater, @Nullable ViewGroup container, Bundle savedInstanceState);
+    protected abstract @LayoutRes int getFragmentLayoutRes();
+
+    protected abstract void createFragmentView(View root);
 
 }
