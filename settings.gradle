@@ -1,1 +1,1 @@
-include ':activity_launch_mode', ':myapplication', ':fragment_lifecycle', ':baselibrary'
+include ':activity_launch_mode', ':myapplication', ':fragment_lifecycle', ':baselibrary', ':opencvdemo', ':sdk'
