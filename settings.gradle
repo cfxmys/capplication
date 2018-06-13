@@ -1,2 +1,1 @@
-include ':activity_launch_mode', ':mykapplication', ':fragment_lifecycle', ':baselibrary', ':opengltestapplication',
-        ':commonandroidapplication',':opencvdemo', ':sdk', ':apidemo'
+include ':activity_launch_mode', ':mykapplication', ':fragment_lifecycle', ':baselibrary', ':opengltestapplication',':opencvdemo', ':sdk', ':apidemo'

@@ -17,9 +17,9 @@ import demos.cfxmys.com.baselibrary.BaseActivity;
 
 public class MainActivity extends BaseActivity {
 
-    @BindView(R.id.pic_process)
+    @BindView(R2.id.pic_process)
     Button mProcess;
-    @BindView(R.id.image)
+    @BindView(R2.id.image)
     ImageView mTestImage;
 
     @Override
